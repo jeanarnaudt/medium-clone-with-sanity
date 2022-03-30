@@ -1,0 +1,11 @@
+.author {
+  @apply flex items-center;
+}
+
+.author__image {
+  @apply object-cover rounded-full cursor-pointer;
+}
+
+.author__name {
+  @apply text-ellipsis text-jet line-clamp-1 overflow-hidden font-medium break-all;
+}

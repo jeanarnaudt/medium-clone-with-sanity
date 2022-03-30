@@ -1,0 +1,15 @@
+.toolbar {
+  @apply flex items-start;
+}
+
+.toolbar .toolbar__btn {
+  @apply px-[2px] py-2 cursor-pointer;
+}
+
+.toolbar .toolbar__btn span {
+  @apply text-sonic hover:text-jet transition duration-150 ease-in cursor-pointer;
+}
+
+.toolbar .btn__addToList {
+  @apply ml-7 pr-0 my-0 mr-1;
+}

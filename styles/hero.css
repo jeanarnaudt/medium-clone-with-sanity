@@ -1,0 +1,23 @@
+.hero {
+	@apply pt-[75px] w-full;
+}
+
+.hero__wrapper {
+	@apply bg-none bg-[length:385px_341px] bg-right-bottom bg-no-repeat flex;
+}
+
+.hero__content {
+	@apply w-[550px] py-[93px];
+}
+
+.hero__content .content__title {
+	@apply mb-[40px] leading-[95px] xs:text-[75px] sm:text-[90px] md:text-[120px] text-fogra font-hahmlet tracking-tighter;
+}
+
+.hero__content .content__text {
+	@apply mb-[60px] text-2xl text-jet leading-6 font-normal;
+}
+
+.hero__content button {
+	@apply w-[213px] text-[20px] leading-6;
+}

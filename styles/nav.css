@@ -1,0 +1,35 @@
+.nav {
+  @apply fixed top-0 z-10 flex flex-col items-center justify-between h-full;
+}
+
+.nav__logo {
+  @apply py-10;
+}
+
+.nav__logo svg {
+  @apply cursor-pointer;
+}
+
+.nav__menu {
+  @apply block;
+}
+
+.nav__menu .menu__item {
+  @apply pb-[35px] flex flex-col items-center;
+}
+
+.nav__menu .menu__item span {
+  @apply text-sonic hover:text-jet transition duration-150 ease-in cursor-pointer;
+}
+
+.nav__menu .menu__separator {
+  @apply mb-[35px] mx-7 w-6 block;
+}
+
+.nav__menu .menu__separator .separator {
+  @apply bg-platinum h-px m-0 border-none;
+}
+
+.nav__options {
+  @apply flex items-center h-16 px-6 pt-0 pb-6;
+}

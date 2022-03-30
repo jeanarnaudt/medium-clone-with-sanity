@@ -1,0 +1,20 @@
+.meta {
+  @apply text-sonic flex items-center;
+}
+
+.meta span,
+.meta .meta__time {
+  @apply leading-none;
+}
+
+.meta__tag {
+  @apply whitespace-nowrap bg-platinum hover:bg-light-gray place-items-center px-[10px] grid py-[6px] leading-none capitalize transition duration-300 ease-in rounded-full;
+}
+
+.meta__dot {
+  @apply px-1 text-sm font-semibold;
+}
+
+.meta__icon {
+  @apply pl-[6px];
+}

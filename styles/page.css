@@ -1,0 +1,27 @@
+.page {
+  @apply block bg-white;
+}
+
+.page__wrap {
+  @apply flex flex-row justify-between;
+}
+
+.page__header {
+  @apply border-platinum relative flex-shrink block w-20 min-h-screen border-r;
+}
+
+.page__main {
+  @apply relative flex-1 block;
+}
+
+.main__content {
+  @apply block;
+}
+
+.content__body {
+  @apply flex justify-center mb-10;
+}
+
+.page__sidebar {
+  @apply w-[394px] min-h-screen border-l border-platinum px-8 relative block bg-white;
+}

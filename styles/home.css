@@ -1,0 +1,79 @@
+.home {
+  @apply block w-full;
+}
+
+.home__header {
+  @apply border-jet relative border-b;
+}
+
+.home__header--white {
+  @apply bg-white;
+}
+
+.home__header--yellow {
+  @apply bg-amber;
+}
+
+.header__nav {
+  @apply border-jet bg-amber fixed top-0 left-0 right-0 z-10 w-full transition-colors duration-300 ease-linear border-b;
+}
+
+.header__nav .nav__logo {
+  @apply cursor-pointer;
+}
+
+.header__nav .inner__nav {
+  @apply h-[75px] flex items-center justify-between;
+}
+
+.header__nav .nav__menu {
+  @apply flex items-center space-x-6;
+}
+
+.header__nav .nav__menu .menu__option {
+  @apply sm:block text-jet hidden text-sm font-medium cursor-pointer;
+}
+
+.header__nav .nav__menu .signin {
+  @apply xs:block;
+}
+
+.header__nav .nav__menu .btn {
+  @apply text-sm;
+}
+
+.home__section {
+  @apply block w-full;
+}
+
+.home__section--bt {
+  @apply border-platinum pt-14 pb-10 border-t;
+}
+
+.home__section .section__trendings {
+  @apply block pt-10 pb-4;
+}
+
+.section__trendings .trendings__header {
+  @apply gap-[10px] flex items-center mb-4;
+}
+
+.section__trendings .trendings__header p {
+  @apply text-xs subpixel-antialiased font-bold tracking-wider uppercase;
+}
+
+.section__trendings .trendings__body {
+  @apply w-[calc(100%_+_32px)] flex flex-row flex-wrap items-start -mx-4;
+}
+
+.section__content {
+  @apply grid grid-cols-12 grid-rows-1;
+}
+
+.section__content .content__main {
+  @apply col-span-7 space-y-12;
+}
+
+.section__content .content__sidebar {
+  @apply col-span-4 col-start-9;
+}

@@ -1,0 +1,77 @@
+/* Article card */
+.article {
+  @apply flex items-center justify-between gap-5;
+}
+
+.article__content {
+  @apply flex-1;
+}
+
+.article__content .author {
+  @apply pb-2;
+}
+
+.article__content .author .author__image {
+  @apply w-5 h-5;
+}
+
+.article__content .author .author__name {
+  @apply text-[13px] leading-4 ml-2;
+}
+
+.article__content .content__title {
+  @apply max-h-14 tracking-[-0.03em] font-bold text-jet text-[21px] line-clamp-2 leading-7 cursor-pointer;
+}
+
+.article__content .content__excerpt {
+  @apply line-clamp-2 text-sonic text-[15px] leading-5 font-normal pt-1 cursor-pointer;
+}
+
+.article__content .content__bottom {
+  @apply flex items-center justify-between pt-2;
+}
+
+.article__content .content__bottom .meta {
+  @apply text-[13px];
+}
+
+.article__image {
+  @apply h-[134px] w-[200px] cursor-pointer object-cover;
+}
+
+/* Trending card */
+.trending {
+  @apply sm:w-1/2 md:w-1/2 lg:w-1/3 flex items-start flex-grow h-full gap-3 px-4 mb-6;
+}
+
+.trending .trending__head {
+  @apply -top-2 relative flex-none block w-10;
+}
+
+.trending .trending__head .head__index {
+  @apply text-platinum tracking-[0px] font-bold text-3xl;
+}
+
+.trending .trending__body {
+  @apply flex flex-col;
+}
+
+.trending .trending__body .author {
+  @apply mb-2;
+}
+
+.trending .trending__body .author__image {
+  @apply w-5 h-5;
+}
+
+.trending .trending__body .author__name {
+  @apply text-[13px] leading-4 ml-2;
+}
+
+.trending .trending__body .body__title {
+  @apply max-h-10 text-ellipsis tracking-[0px] overflow-hidden font-bold text-jet text-base line-clamp-2 leading-5 mb-2;
+}
+
+.trending .trending__body .meta {
+  @apply text-[13px];
+}

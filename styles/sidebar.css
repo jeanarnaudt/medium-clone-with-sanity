@@ -1,0 +1,103 @@
+.sidebar {
+  @apply sticky top-0 block mt-0;
+}
+
+.sidebar__wrap {
+  @apply flex flex-col min-h-screen;
+}
+
+.widget__options {
+  @apply flex items-center pt-10;
+}
+
+.widget__options button {
+  @apply text-sm;
+}
+
+.widget__options .option__button {
+  @apply flex-1 leading-none;
+}
+
+.widget__options .option__link {
+  @apply text-blue-ncs hover:text-jet ml-6 transition duration-150 ease-in;
+}
+
+.widget__search {
+  @apply pt-10;
+}
+
+.widget__search .search {
+  @apply border-platinum rounded-[20px] flex border;
+}
+
+.widget__search .search span {
+  @apply p-[7px] block;
+}
+
+.widget__search .search input {
+  @apply text-jet focus:outline-0 focus:border-none focus:ring-0 w-full px-0 py-2 mr-5 text-sm bg-transparent border-none;
+}
+
+.widget__author {
+  @apply pt-10;
+}
+
+.widget__author .author__image {
+  @apply w-[88px] h-[88px] rounded-full object-cover;
+}
+
+.widget__author .author__name {
+  @apply text-jet mt-4 text-base font-semibold leading-5 tracking-normal cursor-pointer;
+}
+
+.widget__author .author__follower_count {
+  @apply text-sonic mt-1 text-base;
+}
+
+.widget__author .author__bio {
+  @apply text-sonic mt-3 text-sm;
+}
+
+.widget__author .buttons {
+  @apply flex items-center mt-6;
+}
+
+.widget__author .btn span {
+  @apply text-sm;
+}
+
+.widget__author .button__newsletter {
+  @apply place-items-center p-[2px] grid ml-2;
+}
+
+.widget__author .button__newsletter svg {
+  @apply stroke-white w-9 h-9;
+}
+
+.widget__topics {
+  @apply border-platinum block pb-6 border-b;
+}
+
+.widget__topics .topics__title {
+  @apply mb-4 text-xs font-bold tracking-normal uppercase;
+}
+
+.widget__topics .topics__content {
+  @apply flex flex-wrap gap-2;
+}
+
+.widget__topics .topic {
+  @apply rounded-[3px] py-[6px] px-4 border border-platinum text-[13px] leading-5 text-sonic;
+}
+
+.widget__menu {
+  @apply flex flex-wrap px-0 py-6;
+}
+
+.widget__menu > .menu__item {
+  @apply mr-[26px] mb-2 block;
+}
+
+.widget__menu > .menu__item > span {
+  @apply text-sonic text-sm cursor-pointer;
+}

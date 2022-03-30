@@ -1,0 +1,23 @@
+.post {
+  @apply max-w-[692px] mx-8 min-w-0 w-full;
+}
+
+.post header {
+  @apply mt-14 flex items-start justify-between mb-8;
+}
+
+.post .author .author__image {
+  @apply w-12 h-12 mr-4;
+}
+
+.post .author .author__name {
+  @apply mb-1 text-base leading-6;
+}
+
+.post .author .meta {
+  @apply text-sm;
+}
+
+.post .post__body figure {
+  @apply mt-7;
+}
