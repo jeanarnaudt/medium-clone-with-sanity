@@ -14,17 +14,6 @@ import WidgetTopics from '../components/widget-topics'
 import WidgetMenu from '../components/widget-menu'
 
 const Home = ({ posts }) => {
-  const [isDown, setIsDown] = useState(false)
-
-  useEffect(() => {
-    let y = window.scrollY
-
-    if (y >= 370) {
-      setIsDown(true)
-    }
-    console.log(window.scrollY)
-  }, [])
-
   return (
     <div className="home">
       <Head>
