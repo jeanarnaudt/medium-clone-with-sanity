@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Hahmlet:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Newsreader:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Hahmlet:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Newsreader:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
 
 body {
   @apply font-body text-opacity-80 p-0 m-0 text-base subpixel-antialiased leading-5 text-black bg-white;
@@ -23,6 +23,10 @@ body {
 
   .btn--blue {
     @apply bg-blue-ncs border-blue-ncs hover:bg-blue-cg hover:border-blue-cg text-white border;
+  }
+
+  .btn--green {
+    @apply bg-india border-india hover:bg-pakistan hover:border-pakistan text-white border;
   }
 }
 

@@ -18,6 +18,7 @@ module.exports = {
         jet: '#292929',
         eerie: '#191919',
         india: '#1A8917',
+        pakistan: '#156912',
         amber: '#FFC017',
         sonic: '#757575',
         platinum: '#E6E6E6',
@@ -29,7 +30,8 @@ module.exports = {
       fontFamily: {
         // body: ['"Montserrat", sans-serif'],
         // body: ['"Roboto Slab", sans-serif'],
-        body: ['"League Spartan", sans-serif'],
+        body: ['"Quicksand", sans-serif'],
+        // body: ['"League Spartan", sans-serif'],
         hahmlet: ['"Hahmlet", serif'],
         garamond: ['"EB Garamond", serif'],
         newsreader: ['"Newsreader", serif'],

@@ -14,6 +14,18 @@ import WidgetTopics from '../components/widget-topics'
 import WidgetMenu from '../components/widget-menu'
 
 const Home = ({ posts }) => {
+  const [isDown, setIsDown] = useState(false)
+
+  const changeBackgroundColor = () => {
+    window.scrollY >= 370 ? setIsDown(true) : setIsDown(false)
+    console.log(window.scrollY)
+  }
+
+  useEffect(() => {
+    changeBackgroundColor()
+    window.addEventListener('scroll', changeBackgroundColor)
+  }, [])
+
   return (
     <div className="home">
       <Head>
@@ -25,12 +37,8 @@ const Home = ({ posts }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div
-        className={`home__header ${
-          isDown ? 'home__header--white' : 'home__header--yellow'
-        }`}
-      >
-        <div className="header__nav">
+      <div className="home__header">
+        <div className={`header__nav ${isDown && 'active'}`}>
           <div className="container">
             <div className="inner__nav">
               <Link href="/">
@@ -57,7 +65,11 @@ const Home = ({ posts }) => {
                   <span className="menu__option signin">Sign In</span>
                 </Link>
                 <Link href="#">
-                  <span className="btn btn--black">Get started</span>
+                  <span
+                    className={`btn ${isDown ? 'btn--green' : 'btn--black'}`}
+                  >
+                    Get started
+                  </span>
                 </Link>
               </div>
             </div>

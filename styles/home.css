@@ -3,19 +3,15 @@
 }
 
 .home__header {
-  @apply border-jet relative border-b;
-}
-
-.home__header--white {
-  @apply bg-white;
-}
-
-.home__header--yellow {
-  @apply bg-amber;
+  @apply border-jet bg-amber relative border-b;
 }
 
 .header__nav {
   @apply border-jet bg-amber fixed top-0 left-0 right-0 z-10 w-full transition-colors duration-300 ease-linear border-b;
+}
+
+.header__nav.active {
+  @apply bg-white;
 }
 
 .header__nav .nav__logo {
